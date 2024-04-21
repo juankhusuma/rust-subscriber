@@ -7,3 +7,5 @@ the second guest, and what is localhost:5672 is for?
 
 ![Alt text](queue.png)
 > The number of queue as seen above is due to the amuont of messages sent by the publisher to the message broker has yet to be all processed by the consumer as the consumer is slower than the publisher. Therefore all of the unprocessed messages are stored in the queue.
+![Alt text](image.png)
+> The queue is consumed at a significantly faster rate because there are 3 consumers consuming the messages from the queue. Therefore the number of messages in the queue is reduced significantly. The message broker is able to balance the load between the consumers and distribute the messages to the consumers.
