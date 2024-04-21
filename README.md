@@ -4,3 +4,6 @@ a. what is amqp?
 b. what it means? guest:guest@localhost:5672 , what is the first quest, and what is
 the second guest, and what is localhost:5672 is for?
 > guest:guest is the username and password for the RabbitMQ server. localhost:5672 is the address of the RabbitMQ server. The default port for RabbitMQ is 5672.
+
+![Alt text](queue.png)
+> The number of queue as seen above is due to the amuont of messages sent by the publisher to the message broker has yet to be all processed by the consumer as the consumer is slower than the publisher. Therefore all of the unprocessed messages are stored in the queue.
